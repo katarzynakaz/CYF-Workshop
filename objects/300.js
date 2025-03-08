@@ -7,7 +7,8 @@ function checkLivesNearCYF(person) {
     const cyfLocations = ["Birmingham", "Cape Town", "Glasgow", "London", "Manchester"];
     return cyfLocations.includes(person.location);
 }
-
+//if includes returns true
+//parametr location not city
 const mo = {
     "name": "Mo",
     "city": "Glasgow",
@@ -20,5 +21,5 @@ const sayed = {
     "focus": "SQL",
 }
 
-console.assert(checkLivesNearCYF(mo));
-console.assert(!checkLivesNearCYF(sayed));
+console.assert(checkLivesNearCYF('mo', 'mo')); //underfined and false because no mo.location so failed
+console.assert(!checkLivesNearCYF(sayed)); //false ! , can pass for the wrong reason 

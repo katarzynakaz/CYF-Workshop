@@ -24,12 +24,13 @@ function printSaladRecipe(forPerson) {
     console.log(`For ${forPerson.name} to make ${saladRecipe.name}:`);
     console.log("Get:");
     for (const ingredient of saladRecipe.ingredients) {
-        console.log(` * ${ingredient}`);
+        console.log(` * ${ingredient}`); // for ola 5 bo chix
     }
     for (const step of saladRecipe.steps) {
         console.log(step);
     }
 }
+//encapsulate value into the string ${}
 
 const person1 = {
     "name": "Ola",
@@ -41,6 +42,9 @@ const person2 = {
     "eatsMeat": false,
 };
 
-printSaladRecipe(person1);
+printSaladRecipe(person1);  
 console.log("");
 printSaladRecipe(person2);
+
+
+//push chicken to ingreadients not an object so saladrecipe.ingredients.push()

@@ -12,5 +12,7 @@ const person = {
 function assertFieldEquals(object, field, targetValue) {
     console.assert(object.field === targetValue);
 }
-
+//wrong object[field] === targetValue   field is used as a variable 
+// object.field is  aproperty dthat does not exist so use object[field]  to access object
+// either . or backet notataion
 assertFieldEquals(person, "favourite_ice_cream", "vanilla");
