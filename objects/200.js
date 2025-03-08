@@ -12,3 +12,7 @@ const person = {
 console.assert(person.name === "Jemima");
 console.assert(person.location === "Glasgow");
 console.assert(person.id_number === 9);
+
+
+//consol.eassert if fasle it will show assertion failed 
+console.assert(person.location ==='Glasgow', 'msg to sknow which one failed')
